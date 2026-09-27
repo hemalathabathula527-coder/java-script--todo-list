@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, conflowerblue,purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background :white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: darkgray;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+   border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addBtn {
+   background: cornflowerblue;
+    color: white;
+}
+
+#addBtn:hover {
+    background: mediumblue;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+   background: lightgray;
+color: darkgray;
+}
+
+.filter.active {
+   background: cornflowerblue;
+    color: white;
+}
+
+#taskCount {
+    color: dimgray;
+    margin-bottom: 15px;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: whitesmoke;
+    border-radius: 8px;
+}
+
+.task span {
+    flex: 1;
+    word-break: break-word;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+   color: gray;
+}
+
+.edit-btn {
+    background: gold;
+    color: white;
+}
+
+.delete-btn {
+   background: crimson;
+    color: white;
+}
+
+#clearCompleted {
+    width: 100%;
+    margin-top: 15px;
+   background: darkgray;
+    color: white;
+}
+
+.empty {
+    text-align: center;
+   color: gray;
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .input-section {
+        flex-direction: column;
+    }
+
+    #addBtn {
+        width: 100%;
+    }
+
+    .task {
+        flex-wrap: wrap;
+    }
+}
